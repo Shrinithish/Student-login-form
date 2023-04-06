@@ -1,2 +1,1 @@
-# Student-login-form
-Student Login form with backend connected
+# student registration page
