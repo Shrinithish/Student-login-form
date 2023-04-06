@@ -13,7 +13,24 @@ h1 {
     text-align: center;
     margin-top: 50px;
     font-size: 36px;
-}
+    position: relative;
+    left: -100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+      }
+      @keyframes slideIn {
+        from {
+          left: -100px;
+        }
+        to {
+          left: 0;
+        }
+      }
+      
+
 
 /* Table styles */
 
@@ -22,8 +39,24 @@ table {
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+
 
 th {
     background-color: #2980b9;
@@ -67,3 +100,9 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.delete-button:hover {
+    background-color: red;
+    color: white;
+  }
+  
